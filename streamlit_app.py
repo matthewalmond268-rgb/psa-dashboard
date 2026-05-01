@@ -8,9 +8,9 @@ df = pd.read_csv("psa_results.csv")
 threshold = st.slider(
     "Threshold (£/QALY)",
     min_value=0,
-    max_value=5000,
-    value=1000,
-    step=50
+    max_value=50000,
+    value=10000,
+    step=100
 )
 
 st.write(f"Current threshold: £{threshold}")
